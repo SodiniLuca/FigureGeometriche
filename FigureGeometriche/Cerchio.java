@@ -1,4 +1,4 @@
-public class Cerchio extens FigureGeometriche{
+public class Cerchio extends FigureGeometriche{
 	float raggio;
 
 	Cerchio(String nome, float raggio){
@@ -7,7 +7,12 @@ public class Cerchio extens FigureGeometriche{
 	}
 	
 	@Override
-	public static int calcolaArea(){
-		return (raggio * raggio) * 3,14;
+	public static float calcolaArea(){
+		return (raggio * raggio) * 3.14;
+	}
+	
+	@Override
+	public static float calcolaPerimetro(){
+		return 2 * 3.14 * raggio;
 	}
  }

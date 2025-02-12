@@ -1,13 +1,18 @@
-public class Quadrato extens FigureGeometriche{
+public class Pentagono extends FigureGeometriche{
 	float lato;
 
-	Quadrato(String nome, float lato){
+	Pentagono(String nome, float lato){
 		this.nome = nome;
-		this.base = lato;
+		this.lato = lato;
 	}
 	
 	@Override
 	public static int calcolaArea(){
 		return lato * lato;
+	}
+	
+	@Override
+	public static int calcolaPerimetro(){
+		return lato * 4;
 	}
  }
