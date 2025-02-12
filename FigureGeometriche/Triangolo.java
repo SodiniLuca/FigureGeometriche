@@ -1,10 +1,10 @@
 public class Triangolo extends FigureGeometriche{
-	float base;
-	float altezza;
-	float lato2;
-	float lato3;
+	double base;
+	double altezza;
+	double lato2;
+	double lato3;
 
-	Triangolo(String nome, float base, float lato2, float lato3, float altezza){
+	Triangolo(String nome, double base, double lato2, double lato3, double altezza){
 		this.nome = nome;
 		this.base = base;
 		this.lato2 = lato2;
@@ -13,12 +13,12 @@ public class Triangolo extends FigureGeometriche{
 	}
 	
 	@Override
-	public static float calcolaArea(){
+	public double calcolaArea(){
 		return (base * altezza) / 2;
 	}
 	
 	@Override
-	public static float calcolaPerimetro(){
+	public double calcolaPerimetro(){
 		return base + lato2 + lato3;
 	}
  }

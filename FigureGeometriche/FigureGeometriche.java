@@ -5,11 +5,11 @@ public class FigureGeometriche{
 		this.nome = nome;
 	}
 
-	public static float calcolaArea(){
+	public double calcolaArea(){
 		return 0;
 	}
 	
-	public static float calcolaPerimetro(){
+	public double calcolaPerimetro(){
 		return 0;
 	}
 }

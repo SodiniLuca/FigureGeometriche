@@ -1,18 +1,19 @@
 public class Cerchio extends FigureGeometriche{
-	float raggio;
+	double raggio;
 
-	Cerchio(String nome, float raggio){
+	Cerchio(String nome, double raggio){
 		this.nome = nome;
 		this.raggio = raggio;
 	}
 	
 	@Override
-	public static float calcolaArea(){
-		return (raggio * raggio) * 3.14;
+	public double calcolaArea(){
+		double area = (raggio * raggio) * 3.14;
+		return (String) area;
 	}
 	
 	@Override
-	public static float calcolaPerimetro(){
+	public double calcolaPerimetro(){
 		return 2 * 3.14 * raggio;
 	}
  }
